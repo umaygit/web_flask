@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Ini adalah Website Tugas Pemrograman 1!</h1>
+      <h2>Dibuat Oleh <span>@Mahral Kusuma Hadi</span></h2>
+      <ul>
+        <li><a href="{{ url_for('index')}}" class="active">Index</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}">List Data</a></li>
+        <li><a href="{{ url_for('login')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <img src="{{url_for('static', filename='stmik.png')}}" width="150px">
+      <h1>Websote</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quibusdam ratione excepturi
+          asperiores qui facere! Dolores quis, atque obcaecati nam voluptate repellendus rerum
+          exercitationem molestiae possimus eligendi illum beatae quo consectetur incidunt! Provident, 
+          quod cupiditate esse eligendi ratione laborum atque.Cum quibusdam ratione excepturi
+          asperiores qui facere! Dolores quis, atque obcaecati nam voluptate repellendus rerum
+          exercitationem molestiae possimus eligendi illum beatae quo consectetur incidunt! Provident, 
+          quod cupiditate esse eligendi ratione laborum atque.
+      </p>
+    </div>
+  </body>
+</html>
